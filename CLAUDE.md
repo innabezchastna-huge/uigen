@@ -15,6 +15,8 @@ npm run db:reset     # Reset SQLite database
 
 Run a single test file: `npx vitest run src/components/chat/__tests__/MessageList.test.tsx`
 
+Vitest is configured in `vitest.config.mts` (jsdom environment, `@/` path alias via `vite-tsconfig-paths`).
+
 ## Architecture
 
 UIGen is an AI-powered React component generator with live preview. Users describe components in a chat interface; Claude generates/edits files via tool calls in a virtual file system that is then transpiled and rendered live.
